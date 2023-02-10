@@ -1,1 +1,251 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>
+      Huddle | landing page
+    </title>
+
+    <!-- No dude en eliminar estos estilos o personalizarlos en su propia hoja de estilo 👍 -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');      
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');        
+
+      body{
+        margin: 0;
+        background:hsl(257, 40%, 49%) ;
+        background-image: url(images/bg-desktop.svg);
+      }
+      nav{
+        margin: 40px;
+      }
+      nav img{
+        width: 200px;
+      }
+      section img{
+        margin-left: 40px;
+      }
+      .centre{
+        display: flex;
+      }
+      article h1{
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-size: 35px;
+        margin-bottom: 0px;
+        margin-top: 40px;
+      }
+      article p{
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+
+      }
+      article{
+        margin-left: 60px;
+        margin-right: 130px;
+        text-align: justify;
+        font-size: 1.1rem;
+      }
+      .buttom{
+        width: 200px;
+        height: 55px;
+        background: white;
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-box-shadow: 8px 14px 23px -11px rgba(0,0,0,0.75);
+        -moz-box-shadow: 8px 14px 23px -11px rgba(0,0,0,0.75);
+        box-shadow: 8px 14px 23px -11px rgba(0,0,0,0.75);
+      }
+      .buttom:hover{
+        transform: translateY(-7px);
+        transition: 0.3s;
+      }
+      .buttom p{
+        color: hsl(228, 45%, 44%);
+        font-family: 'Open Sans', sans-serif;
+      }
+      article a{
+        text-decoration: none;
+      }
+      footer{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content:flex-end;
+      }
+      .social-icon{
+        width: 35px;
+        height: 35px;
+        margin-top: 15px;
+        margin-left: 7px;
+        margin-right: 7px;
+        margin-bottom: 10px;
+        border-radius: 100%;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .social-icon img{
+        width: 25px;
+        height: 25px;
+      }
+      footer a:nth-child(3){
+        margin-right:5rem;
+      }
+      .social-icon:hover{
+        transform: translateY(-5px);
+        transition: 0.3s;
+      }
+      @media (max-width:1024px) {
+        body{
+        margin: 0;
+        background:hsl(257, 40%, 49%) ;
+        background-image: url(images/bg-desktop.svg);
+        }
+        nav{
+          display: flex;
+          justify-content:flex-start;
+          margin: 0px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          margin-left: 20px;
+        }
+        nav img{
+        width: 120px;
+        }
+        .centre{
+          width: 100%;
+          display:flex;
+          flex-direction: column;
+          text-align: center;
+        }
+        section img{
+          width: 80%;
+          margin-left: 0px;
+        }
+        article{
+          margin-right: 60px;
+        }
+        article a{
+          display: flex;
+          justify-content: center;
+          margin-top: 60px;
+        }
+        footer{
+          display: flex;
+          justify-content:center;
+          margin-top: 50px;
+          margin-bottom: 20px;
+        }
+        footer a:nth-child(3){
+        margin-right:0rem;
+        }
+
+      }
+      @media (max-width:375px) {
+        body{
+        margin: 0;
+        background:hsl(257, 40%, 49%) ;
+        background-image: url(images/bg-mobile.svg);
+        }
+        nav{
+          display: flex;
+          justify-content:flex-start;
+          margin: 0px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          margin-left: 20px;
+        }
+        nav img{
+        width: 120px;
+        }
+        .centre{
+          width: 100%;
+          display:flex;
+          flex-direction: column;
+          text-align: center;
+        }
+        section img{
+          width: 80%;
+          margin-left: 0px;
+        }
+        article{
+          margin-right: 60px;
+        }
+        article a{
+          display: flex;
+          justify-content: center;
+          margin-top: 60px;
+        }
+        footer{
+          display: flex;
+          justify-content:center;
+          margin-top: 50px;
+          margin-bottom: 20px;
+        }
+        footer a:nth-child(3){
+        margin-right:0rem;
+        }
+
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <!-- this is navbar, here are logo -->
+    <nav>
+      <img src="images/logo.svg" alt="Logo">
+    </nav>
+
+    <!-- this is section, here are article and section image -->
+
+    <div class="centre">
+      <section>
+        <img src="images/illustration-mockups.svg" alt="img-desktop">
+      </section>
+      <article>
+        <h1>Build The Community Your Fans Will Love</h1>
+        <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
+        <a href="">
+          <div class="buttom">
+              <p>Register</p>
+          </div>
+        </a>
+      </article>
+    </div>
+
+    <!--This is the footer, here are the social icons-->
+
+    <footer>
+      <a href="https://www.facebook.com/">
+        <div class="social-icon">
+          <img src="images/social-icons/facebook.svg" alt="icon-facebook">
+        </div>
+      </a>
+      <a href="https://twitter.com/?lang=es">
+        <div class="social-icon">
+          <img src="images/social-icons/twitter.svg" alt="icon-twitter">
+        </div>
+      </a>
+      <a href="https://www.instagram.com/">
+        <div class="social-icon">
+          <img src="images/social-icons/instagram.svg" alt="icon-instagram">
+        </div>
+      </a>
+    </footer>
+  </body>
+</html>
