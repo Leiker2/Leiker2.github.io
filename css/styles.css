@@ -75,14 +75,43 @@ aside{
     border-bottom: 0.05px solid #333;
     margin-top: 10px;
     border-radius: 130%;
+    margin-bottom: 30px;
 }
 .info-profile{
-    width: 100%;
+    margin-top: 10px;
+    width: 80%;
     display: flex;
-    justify-content: center;
-
+    justify-content:flex-start;
+    background-color:#FEF5E7;
+}
+.info-profile a{
+    text-decoration: none;
+    background-color:#FEF5E7;
+}
+.info{
+    background-color:#FEF5E7;
+    width: 80px;
 }
 .info img{
     width: 15px;
     height: 15px;
+    background-color:#FEF5E7;
 }
+.info-rrss{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    background-color:#FEF5E7;
+}
+.info-rrss a img{
+    width: 25px;
+    height: 25px;
+    background-color:#FEF5E7;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.info-rrss a{
+    background-color:#FEF5E7;
+}
+
