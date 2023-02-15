@@ -20,7 +20,6 @@ p{
 /* Here are stylessheets of layout */
 .page{
     width:100%;
-    background: cyan;
     display: flex;
 }
 section{
@@ -167,3 +166,14 @@ aside{
     text-align: justify;
     background: #F59191;
 }
+@media (max-width:1024px) {
+    .page{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card{
+        width: 100%;
+    }
+}
+
