@@ -104,14 +104,26 @@ aside{
     width: 80%;
     background-color:#FEF5E7;
 }
-.info-rrss a img{
-    width: 25px;
-    height: 25px;
-    background-color:#FEF5E7;
+.icon-rrss{
+    width: 35px;
+    height: 35px;
+    background-color:#eb4d4b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 5px;
     margin-right: 5px;
+    border-radius: 5px;
+    
 }
+.icon-rrss a img{
+    width: 25px;
+    height: 25px;
+    background-color:#eb4d4b;
+}
+
 .info-rrss a{
-    background-color:#FEF5E7;
+    background-color:#eb4d4b;
 }
+
 
