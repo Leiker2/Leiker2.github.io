@@ -15,7 +15,10 @@ h1{
 p{
     font-family: "poppins";
     font-size: small;
-
+}
+a{
+    font-family: "poppins";
+    font-size: small; 
 }
 /* Here are stylessheets of layout */
 .page{
@@ -165,6 +168,15 @@ aside{
 .bodyDescription p{
     text-align: justify;
     background: #F59191;
+}
+.projects-link a{
+    background: #F59191;
+}
+.projects-link{
+    background: #F59191;
+}
+ul{
+    background-color: #F59191;k
 }
 @media (max-width:1024px) {
     .page{
