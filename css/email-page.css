@@ -12,15 +12,14 @@ body{
     display: grid;
     grid-template-rows: auto 1fr auto;
     width: 300px;
+    justify-items: center;
 }
-
 .logo{
     width: 150px;
     margin-bottom: 48px;
     justify-self: center;
     display: none;
 }
-
 .title{
     font-size: var(--lg);
     margin-bottom: 12px;
@@ -52,6 +51,19 @@ body{
     padding: 6px;
     margin-bottom: 12px;
 }
+.email-image{
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    background-color: var(--text-input-field);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.email-image img{
+    width: 80px;
+}
 .primary-button{
     background-color: var(--hospital-green);
     border-radius: 8px;
@@ -66,6 +78,16 @@ body{
 .login-button{
     margin-bottom: 30px;
     margin-top: 14px;
+}
+.resend{
+    font-size: var(--sm);
+}
+.resend span{
+    color: var(--very-light-pink);
+}
+.resend a{
+    color: var(--hospital-green);
+    text-decoration: none;
 }
 @media (max-width:640px) {
     .logo{
