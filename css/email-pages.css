@@ -25,6 +25,10 @@ body{
     margin-bottom: 12px;
     text-align: center;
 }
+.title-account{
+    text-align: start !important;
+    margin-bottom: 36px !important;
+}
 .subtitle{
     color: var(--very-light-pink);
     font-size: var(--md);
@@ -45,10 +49,19 @@ body{
     text-decoration: none;
     margin-bottom: 54px;
 }
+.form div{
+    display: flex;
+    flex-direction: column;
+}
 .label{
     font-size: var(--sm);
     font-weight: bold;
     margin-bottom: 4px;
+}
+.value{
+    color: var(--very-light-pink);
+    font-size: var(--md);
+    margin: 8px 0px 32px 0px;
 }
 .input {
     background-color: var(--text-input-field);
@@ -58,6 +71,9 @@ body{
     font-size: var(--md);
     padding: 6px;
     margin-bottom: 12px;
+}
+.input-name, .input-email, .input-password{
+    margin-bottom: 22px;
 }
 .input-email{
     margin-bottom: 22px;
@@ -120,4 +136,12 @@ body{
         position: absolute;
         bottom: 0;
         margin-bottom: 24px;
+    }
+    .form-container-create{
+        height: 100vh;
+    }
+    .form-create{
+        height: 100vh;
+        justify-content: space-between;
+    }
 }
