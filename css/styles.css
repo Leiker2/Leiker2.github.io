@@ -4,188 +4,33 @@
     margin: 0px;
     background-color:#EBEDEF ;
 }
+:root{
+    --primary-color: #231E39;
+    --second-color: #A4A2A2;
+    --white:#FFFFFF;
+    --black:#000000;
+    --bg:#DDDDDD;
+}
 body{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-}
-h1{
-    font-family: "poppins";
-}
-p{
-    font-family: "poppins";
-    font-size: small;
-}
-a{
-    font-family: "poppins";
-    font-size: small; 
-}
-/* Here are stylessheets of layout */
-.page{
-    width:100%;
-    display: flex;
-}
-section{
-    width: 80%;
-    display: flex;
-    justify-content: center;
-}
-
-/* now, styles sheets of my profile card  */
-
-.card{
-    width: 65%;
-    height: 32rem;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    text-align: center;
-    background-color: #FEF5E7;
-    -webkit-box-shadow: 9px 12px 24px -12px rgba(0,0,0,0.75);
-    -moz-box-shadow: 9px 12px 24px -12px rgba(0,0,0,0.75);
-    box-shadow: 9px 12px 24px -12px rgba(0,0,0,0.75);
-    position: relative;
-    animation: floating 2s ease-in-out infinite;
-}
-@keyframes floating {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-
-.photo-profile{
-    margin-top: 25px;
-    background-color: #FEF5E7;
-}
-.card h1{
-    background-color:#FEF5E7;
-    margin-top: 20px;
-}
-.card p{
-    background-color:#FEF5E7;
-}
-.photo-profile img{
-    width: 150px;
-    height: 150px;
-    border-radius: 100%;
-}
-.line{
-    width: 60%;
-    height: 1px;
-    border-bottom: 0.05px solid #333;
-    margin-top: 10px;
-    border-radius: 130%;
-    margin-bottom: 20px;
-}
-.info-profile{
-    margin-top: 10px;
-    width: 80%;
-    display: flex;
-    justify-content:flex-start;
-    background-color:#FEF5E7;
-}
-.info-profile a{
-    text-decoration: none;
-    background-color:#FEF5E7;
-    font-family: "Poppins";
-    font-size: small;
-}
-.info{
-    background-color:#FEF5E7;
-    width: 80px;
-}
-.info img{
-    width: 15px;
-    height: 15px;
-    background-color:#FEF5E7;
-}
-.info-rrss{
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    background-color:#FEF5E7;
-}
-.icon-rrss{
-    width: 35px;
-    height: 35px;
-    background-color:#F59191;
+    background: var(--bg);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 5px;
-    margin-right: 5px;
-    border-radius: 5px;
-    
 }
-.icon-rrss a img{
-    width: 25px;
-    height: 25px;
-    background-color:#F59191;
-}
-
-.info-rrss a{
-    background-color:#F59191;
-}
-
-/* here are all my descripion (aside) */
-
-aside{
+.body-container{
     width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.left-container, .rigth-container{
+    padding: 70px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-
 }
-.bodyDescription{
-    width: 80%;
-    height: 400px;
-    background: #F59191;  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-    -webkit-box-shadow: 9px 12px 24px -12px rgba(0,0,0,0.75);
-    -moz-box-shadow: 9px 12px 24px -12px rgba(0,0,0,0.75);
-    box-shadow: 9px 12px 24px -12px rgba(0,0,0,0.75);
+.photo-profile{
+    border: none;
+    border-radius: 50%;
+    width: 100px;
 }
-.card2{
-    width: 80%;
-}
-.bodyDescription h1{
-    text-align: center;
-    background: #F59191;
-    padding-bottom: 10px;
-}
-.bodyDescription p{
-    text-align: justify;
-    background: #F59191;
-}
-.projects-link a{
-    background: #F59191;
-}
-.projects-link{
-    background: #F59191;
-}
-ul{
-    background-color: #F59191;k
-}
-@media (max-width:1024px) {
-    .page{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .card{
-        width: 100%;
-    }
-}
-
