@@ -1,0 +1,3 @@
+var nombre = 'Oscar';
+
+// declarar 
