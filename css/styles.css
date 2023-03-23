@@ -50,7 +50,7 @@ h1{
 }
 .left-container{
     border: none;
-    border-radius: 20px;
+    border-right: 1px solid var(--primary-color);
 }
 .photo-profile{
     background: var(--primary-color);
@@ -112,4 +112,40 @@ h1{
 }
 .icon{
     fill: var(--white);
+}
+.rrss-info{
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+.rrss-info ul{
+    list-style: none;
+    background: var(--primary-color);
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 80%;
+    padding: 0px;
+}
+.rrss-info ul li{
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid var(--second-color);
+    border-radius: 50%;
+}
+.rrss-info ul img{
+    width: 24px;
+    height: 24px;
+    background: var(--primary-color);
+}
+.rrss-info ul a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-color);
 }

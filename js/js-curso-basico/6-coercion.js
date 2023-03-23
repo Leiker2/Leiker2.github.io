@@ -1,6 +1,6 @@
 //Coerciones implicitas
-let a= 4 + '7'; //Nos regresa un string
-let a= 4 * '7'; //Nos devolveria un number
+let z = 4 + '7'; //Nos regresa un string
+let x = 4 * '7'; //Nos devolveria un number
 
 //Coerciones explicitas
 //Es cuando obligamos a un valor que sea un tipo
