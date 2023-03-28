@@ -18,9 +18,9 @@ corre el segundo codigo, luego del else */
 
 if (false){ 
     console.log('Hola');
-} else if () {
+} else if ( false) {
     console.log('Soy falso')
-} else if (){
+} else if ( false) {
     console.log('Soy falso 2')
 } else {
     console.log('Soy falso 3')
