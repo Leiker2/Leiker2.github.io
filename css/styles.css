@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,200&display=swap');
 *{
     margin: 0px;
-    background-color:#EBEDEF ;
     font-family: "poppins";
 }
 :root{
@@ -22,10 +21,10 @@ body{
     justify-content: center;
     align-items: center;
 }
-p{
+.description-rrss{
     background-color: var(--primary-color);
 }
-h1{
+.title-name{
     background-color: var(--primary-color);
 
 }
@@ -148,4 +147,45 @@ h1{
     justify-content: center;
     align-items: center;
     background: var(--primary-color);
+}
+.rigth-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+.info-container{
+    color: var(--primary-color);
+    border-radius: 30px;
+    background: var(--white);
+    width: 80%;
+    margin-bottom: 32px;
+}
+.info-container h1{
+    margin: 16px 16px 0px 16px;
+    text-align: center;
+}
+.info-container p{
+    margin: 28px 28px;
+    text-align: justify;
+    font-size: var(--sm);
+
+}
+.info-container ul{
+    margin: 28px 16px;
+}
+.info-container a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: var(--sm);
+}
+@media (max-width:700px) {
+    .body-container{
+        grid-template-columns: 1fr;
+    }
+    .left-container{
+        width: 100%;
+    }
+    .rrss-info{
+        margin-bottom: 32px;
+    }
 }
