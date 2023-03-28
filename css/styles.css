@@ -173,6 +173,9 @@ body{
     background: var(--white);
     width: 80%;
     margin-bottom: 32px;
+    -webkit-box-shadow: 9px 12px 24px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 12px 24px -12px rgba(0,0,0,0.75);
+    box-shadow: 9px 12px 24px -12px rgba(0,0,0,0.75);
 }
 .info-container h1{
     margin: 16px 16px 0px 16px;
