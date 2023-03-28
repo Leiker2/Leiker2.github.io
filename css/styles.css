@@ -46,7 +46,23 @@ body{
     flex-direction: column;
     align-items: center;
     border-radius: 30px;
+    -webkit-box-shadow: 9px 12px 24px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 12px 24px -12px rgba(0,0,0,0.75);
+    box-shadow: 9px 12px 24px -12px rgba(0,0,0,0.75);
+    position: relative;
+    animation: floating 2s ease-in-out infinite;
 }
+@keyframes floating {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
 .left-container{
     border: none;
     border-right: 1px solid var(--primary-color);
