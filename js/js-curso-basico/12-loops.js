@@ -12,7 +12,20 @@ for (var i = 0; i < estudiantes.length; i++){
 }
 
 //for... of
-
+// Funciona obligatoriamente con arrays
 for (var estudiante of estudiantes){
+    saludarEstudiantes(estudiante);
+}
+
+//while
+
+var estudiantes = ['Leiker', 'Maria', 'Sergio', 'Rosa', 'Daniel'];
+
+function saludarEstudiantes(estudiante){
+    console.log(`Hola, ${estudiante}`);
+}
+
+while (estudiante.length > 0 ){
+    var estudiante = estudiantes.shift();
     saludarEstudiantes(estudiante);
 }
