@@ -16,7 +16,7 @@ function auto (marca, modelo, annio){
     this.modelo = modelo;
     this.annio = annio;
 }
-//Generando nnuevo objeto
+//Generando nuevo objeto
 var autoNuevo = new auto('Tesla', 'Model 3', '2023');
 
 //Reto agregar a una funcion constructora 30 carros con modelos
@@ -24,7 +24,7 @@ var autoNuevo = new auto('Tesla', 'Model 3', '2023');
 function car (brand, model, year){
     this.brand = brand;
     this.model = model;
-    this.tear = year;
+    this.year = year;
 }
 
 var cars = []
