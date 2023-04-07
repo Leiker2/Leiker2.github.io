@@ -65,3 +65,11 @@ button:hover{
     color: var(--second-color);
 
 }
+@media (max-width: 640px) {
+    .title{
+        font-size: var(--lg);
+    }
+    .colorHEX{
+        font-size: var(--md);
+    }
+}
