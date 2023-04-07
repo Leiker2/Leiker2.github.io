@@ -29,6 +29,7 @@ section{
     grid-template-columns: 1fr;
     place-items:center;
     height: 400px;
+    background-color: var(--bg);
 }
 .container{
     width: 50%;
@@ -63,76 +64,4 @@ button:hover{
     font-size: var(--lg);
     color: var(--second-color);
 
-}
-.pink{
-    width: 50%;
-    height: 80px;
-    background: #ef5777;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    color: var(--white);
-    gap: 20px;
-    padding: 10px;
-}
-.periwinkle{
-    width: 50%;
-    height: 80px;
-    background: #575fcf;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    color: var(--white);
-    gap: 20px;
-    padding: 10px;
-}
-.megaman{
-    width: 50%;
-    height: 80px;
-    background: #4bcffa;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    color: var(--white);
-    gap: 20px;
-    padding: 10px;
-}
-.minty{
-    width: 50%;
-    height: 80px;
-    background: #0be881;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    color: var(--white);
-    gap: 20px;
-    padding: 10px;
-}
-.vibrant{
-    width: 50%;
-    height: 80px;
-    background: #ffd32a;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    color: var(--white);
-    gap: 20px;
-    padding: 10px;
-}
-.blue{
-    width: 50%;
-    height: 80px;
-    background: var(--primary-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    color: var(--white);
-    gap: 20px;
-    padding: 10px;
 }
