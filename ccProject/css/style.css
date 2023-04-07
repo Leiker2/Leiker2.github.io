@@ -67,9 +67,9 @@ button:hover{
 }
 @media (max-width: 640px) {
     .title{
-        font-size: var(--lg);
+        font-size: var(--md);
     }
     .colorHEX{
-        font-size: var(--md);
+        font-size: var(--sm);
     }
 }
