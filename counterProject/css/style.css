@@ -1,0 +1,50 @@
+body{
+    background: var(--bg);
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+section{
+    width: 80%;
+    height: 55%;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+ul{
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    gap: 28px;
+}
+h1{
+    color: var(--primary-color);
+    font-size: var(--title);
+    font-weight: 300;
+}
+p{
+    font-size: var(--double-title);
+}
+li{
+    font-size: var(--lg);
+}
+.button{
+    width: 150px;
+    height: 30px;
+    border: 2px solid var(--second-color);
+    color: var(--second-color);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button:hover{
+    background: var(--second-color);
+    border-color: var(--white);
+    color: var(--white);
+    transition: 300ms;
+}
