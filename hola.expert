@@ -1,0 +1,21 @@
+//@version=5
+strategy("Estrategia Rentable Forex", overlay=true)
+
+// Definir Stop Loss y Take Profit
+stopLoss = input(title="Stop Loss (en pips)", type=input.float, defval=50.0)
+takeProfit = input(title="Take Profit (en pips)", type=input.float, defval=100.0)
+
+// Definir condiciones de entrada y salida de la operación
+longCondition = ta.crossover(sma(close, 20), sma(close, 50))
+if (longCondition)
+    strategy.entry("Long", strategy.long)
+    strategy.exit("Long Stop Loss/Take Profit", "Long", stop=close - stopLoss * syminfo.mintick, limit=close + takeProfit * syminfo.mintick)
+
+shortCondition = ta.crossunder(sma(close, 20), sma(close, 50))
+if (shortCondition)
+    strategy.entry("Short", strategy.short)
+    strategy.exit("Short Stop Loss/Take Profit", "Short", stop=close + stopLoss * syminfo.mintick, limit=close - takeProfit * syminfo.mintick)
+
+// Mostrar señales de entrada/salida en el gráfico
+plotshape(longCondition, title="Buy", location=location.belowbar, color=color.green, size=size.small, style=shape.arrowup, text="Buy")
+plotshape(shortCondition, title="Sell", location=location.abovebar, color=color.red, size=size.small, style=shape.arrowdown, text="Sell") 
