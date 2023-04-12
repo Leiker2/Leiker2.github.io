@@ -51,6 +51,7 @@ nav{
 }
 .shopping-cart{
     position: relative;
+    cursor: pointer;
 }
 .shopping-cart div {
     position: absolute;
