@@ -1,3 +1,7 @@
+.inactive{
+    display: none;
+}
+/* HERE! Desktop menu */
 .desktop-menu{
     background: var(--white);
     position: absolute;
@@ -44,8 +48,21 @@ ul{
     display: inline-block;
     margin-bottom: 20px;
 }
+
+/* HERE! mobile menu */
 .mobile-menu{
+    position: absolute;
+    top: 68px;
     padding: 24px;
+    animation: mobileMenuScrolling 500ms;
+}
+@keyframes mobileMenuScrolling {
+    0%{
+        transform: translateX(-20px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
 }
 .mobile-menu ul {
     margin-bottom: 24px;
@@ -73,6 +90,8 @@ ul{
     color: var(--hospital-green) !important;
 }
 
+
+/* HERE! Containers of products */
 .cards-container{
     display: grid;
     grid-template-columns: repeat(auto-fill, 240px);
@@ -125,5 +144,13 @@ ul{
     .product-card img{
         width: 140px;
         height: 140px;
+    }
+    .desktop-menu{
+        display: none;
+    }
+}
+@media (min-width:641px) {
+    .mobile-menu{
+        display: none;
     }
 }

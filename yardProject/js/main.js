@@ -1,5 +1,7 @@
 const menuDesplaza = document.querySelector('.navbar-email');
 const desktopMenu = document.querySelector('.desktop-menu');
+const mobileMenuImg = document.querySelector('.menu');
+const mobileMenu = document.querySelector('.mobile-menu')
 
 //Esta fue mi solucion, pero la del profesor es otra, al parecer mas sencilla
 // let i = 0;
@@ -9,7 +11,11 @@ const desktopMenu = document.querySelector('.desktop-menu');
 // });
 
 menuDesplaza.addEventListener('click', toggleDesktopMenu);
+mobileMenuImg.addEventListener('click', toggleMobileMenu);
 
 function toggleDesktopMenu(){
-    desktopMenu.classList.toggle('inactive');
+    desktopMenu.classList.toggle('inactive'); 
+}
+function toggleMobileMenu(){
+    mobileMenu.classList.toggle('inactive'); 
 }

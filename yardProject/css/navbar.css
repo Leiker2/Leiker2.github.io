@@ -1,11 +1,9 @@
 .menu{
     display: none;
+    cursor: pointer;
 }
 .logo{
     width: 100px;
-}
-.inactive{
-    display: none;
 }
 nav{
     display: flex;
