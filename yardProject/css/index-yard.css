@@ -110,6 +110,7 @@ ul{
     height: 240px;
     border-radius: 20px;
     object-fit: cover;
+    cursor: pointer;
 }
 .product-info{
     display: flex;
@@ -131,6 +132,7 @@ ul{
 }
 .product-info figure{
     margin: 0px;
+    cursor: pointer;
 }
 .product-info figure img{
     width: 35px;

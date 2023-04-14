@@ -5,6 +5,8 @@
     box-sizing: border-box;
     position: absolute;
     right: 0;
+  }
+  .aside-animation-rigth{
     animation: productOrdersScrollingRigth 500ms;
   }
   @keyframes productOrdersScrollingRigth {

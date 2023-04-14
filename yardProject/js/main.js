@@ -7,8 +7,8 @@ const mobileMenu = document.querySelector('.mobile-menu');
 const menuCarritoIcon = document.querySelector('.shopping-cart');
 const aside = document.querySelector('#shoppingCartContainer');
 const titleBack = document.querySelector('.title-container');
-const asideInfoProduct = document.querySelector('#productDetail')
-
+const asideInfoProduct = document.querySelector('#productDetail');
+const asideInfoProductClose = document.querySelector('.product-detail-close');
 const cardsContainer = document.querySelector('.cards-container');
 
 
@@ -29,14 +29,36 @@ function toggleDesktopMenu(){
     if(!aside.classList.contains('inactive'))
         aside.classList.toggle('inactive');
 
+    if(!asideInfoProduct.classList.contains('inactive'))
+        asideInfoProduct.classList.toggle('inactive');
+
     desktopMenu.classList.toggle('inactive'); 
 }
 function toggleMobileMenu(){
     if(!aside.classList.contains('inactive'))
         aside.classList.toggle('inactive');
 
+    if(!asideInfoProduct.classList.contains('inactive'))
+        asideInfoProduct.classList.toggle('inactive');
+
     mobileMenu.classList.toggle('inactive'); 
 }
+function openProductDetail(){
+    if(!aside.classList.contains('inactive'))
+        aside.classList.toggle('inactive');
+
+    if(!desktopMenu.classList.contains('inactive'))
+        desktopMenu.classList.toggle('inactive');
+
+    if(!mobileMenu.classList.contains('inactive'))
+        mobileMenu.classList.toggle('inactive');
+
+    asideInfoProduct.classList.remove('inactive');
+}
+function closeProductDetail(){
+    asideInfoProduct.classList.add('inactive');
+}
+
 
 //Esta es la solucion del teacher para cerrar una ventana para que no se solapen
 // function toggleCarritoAside(){
@@ -55,6 +77,10 @@ function toggleCarritoAside(){
 
     if(!desktopMenu.classList.contains('inactive'))
         desktopMenu.classList.toggle('inactive');
+
+    if(!asideInfoProduct.classList.contains('inactive'))
+        asideInfoProduct.classList.toggle('inactive');
+
 
     aside.classList.toggle('inactive');
 }
@@ -104,6 +130,8 @@ function renderProducts(arr){
     for (product of arr){
         const productCard = document.createElement('div');
         productCard.classList.add('product-card');
+        productCard.addEventListener('click',openProductDetail)
+        asideInfoProductClose.addEventListener('click',closeProductDetail )
     
         const productImg = document.createElement('img');
         productImg.classList.add('product-img');
@@ -139,11 +167,5 @@ function renderProducts(arr){
         cardsContainer.appendChild(productCard);
     }
 }
-
-// productCard.addEventListener('Click', openProductDetail)
-
-// function openProductDetail(){
-
-// }
 
 renderProducts(productlist);
