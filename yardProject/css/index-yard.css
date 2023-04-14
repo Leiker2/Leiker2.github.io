@@ -51,10 +51,12 @@ ul{
 
 /* HERE! mobile menu */
 .mobile-menu{
+    width: 95%;
     background: var(--white);
     position: absolute;
     top: 68px;
-    padding: 24px;
+    left: 0;
+    padding: 24px 0px 24px 24px;
     animation: mobileMenuScrolling 500ms;
 }
 @keyframes mobileMenuScrolling {

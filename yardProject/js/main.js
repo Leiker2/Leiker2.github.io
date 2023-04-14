@@ -5,8 +5,9 @@ const desktopMenu = document.querySelector('.desktop-menu');
 const mobileMenuImg = document.querySelector('.menu');
 const mobileMenu = document.querySelector('.mobile-menu');
 const menuCarritoIcon = document.querySelector('.shopping-cart');
-const aside = document.querySelector('.product-detail');
+const aside = document.querySelector('#shoppingCartContainer');
 const titleBack = document.querySelector('.title-container');
+const asideInfoProduct = document.querySelector('#productDetail')
 
 const cardsContainer = document.querySelector('.cards-container');
 
@@ -138,5 +139,11 @@ function renderProducts(arr){
         cardsContainer.appendChild(productCard);
     }
 }
+
+// productCard.addEventListener('Click', openProductDetail)
+
+// function openProductDetail(){
+
+// }
 
 renderProducts(productlist);

@@ -1,4 +1,4 @@
-.product-detail {
+#shoppingCartContainer {
     background: var(--white);
     width: 360px;
     padding: 0 24px;
@@ -84,7 +84,7 @@
     height: 50px;
   }
   @media (max-width: 640px) {
-    .product-detail {
+    #shoppingCartContainer {
       width: 100%;
     }
   }
