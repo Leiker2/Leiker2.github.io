@@ -63,6 +63,9 @@ function projectorOfProductList(project){
     descriptionProject.classList.add('description-project');
     descriptionProject.innerHTML = project.description;
 
+    const containerLink = document.createElement('div');
+    containerLink.classList.add('container-link');
+
     const linkProject = document.createElement('a');
     linkProject.classList.add('url-project');
     linkProject.innerHTML = 'Conoce el Projecto';
@@ -78,7 +81,10 @@ function projectorOfProductList(project){
 
     portfolioContainerLeft.appendChild(titleProject);
     portfolioContainerLeft.appendChild(descriptionProject);
-    portfolioContainerLeft.appendChild(linkProject);
+    portfolioContainerLeft.appendChild(containerLink);
+
+    containerLink.appendChild(linkProject);
+
 
     portfolioContainerRigth.appendChild(imgProject);
     
