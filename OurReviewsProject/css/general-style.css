@@ -1,0 +1,74 @@
+/* This is part for title and general container */
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-color);
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+.our-reviews-title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.our-reviews-title h1{
+    font-size: var(--title-sz);
+    font-weight: var(--title-wt);
+}
+.line-primary{
+    width: 80px;
+    border-top: 4px solid var(--primary-color);
+    margin-top: 8px;
+}
+
+/* This is container of information and carrousel */
+
+.container-general{
+    width: 40%;
+    height: 400px;
+    background: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 44px;
+    -webkit-box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.75);
+}
+.img-profile img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+.container-general h1{
+    font-family: sans-serif !important;
+    line-height: 1.25;
+    letter-spacing: 0.25rem;
+    font-size: 18px;
+    font-weight: 400;
+}
+.container-general span{
+    font-size: 18px;
+    font-weight: 200;
+    color: var(--primary-color);
+}
+.container-general p{
+    font-size: 16px;
+    font-weight: 200;
+    margin-top: 8px;
+    color: var(--default-grey)
+}
+.arrow-slide{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.arrow-slide figure img{
+    width: 30px;
+    height: 30px;
+}
+
+

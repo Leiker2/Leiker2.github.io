@@ -12,5 +12,6 @@
     "course"
   ],
   "author": "Leiker Gomez <leiker.dgs@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "type" : "module"
 }
