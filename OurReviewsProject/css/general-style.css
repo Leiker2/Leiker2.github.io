@@ -28,7 +28,6 @@
 
 .container-general{
     width: 40%;
-    height: 400px;
     background: white;
     border-radius: 8px;
     display: flex;
@@ -39,24 +38,42 @@
     -moz-box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.75);
     box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.75);
 }
+.container-comillas{
+    position: absolute;
+}
+.comillas{
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    position: relative;
+    top: 0px;
+    left: -60px;
+}
 .img-profile img{
     width: 160px;
     height: 160px;
     border-radius: 50%;
 }
-.container-general h1{
+.info-employee{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info-employee h1{
     font-family: sans-serif !important;
     line-height: 1.25;
     letter-spacing: 0.25rem;
     font-size: 18px;
     font-weight: 400;
 }
-.container-general span{
+.info-employee span{
     font-size: 18px;
     font-weight: 200;
     color: var(--primary-color);
 }
-.container-general p{
+.info-employee p{
     font-size: 16px;
     font-weight: 200;
     margin-top: 8px;
@@ -65,10 +82,33 @@
 .arrow-slide{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 12px;
+    cursor: pointer;
 }
 .arrow-slide figure img{
     width: 30px;
     height: 30px;
 }
-
+.arrow-slide figure img:hover{
+    fill: black;
+    transition: 3000ms;
+}
+.surprise-me-button{
+    margin: 8px 0px;
+    width: 120px;
+    height: 40px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.surprise-me-button:hover{
+    transition: 1000ms;
+    background-color: white;
+    color: var(--primary-color);
+}
 
