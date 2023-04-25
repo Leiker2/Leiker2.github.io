@@ -1,7 +1,11 @@
 // Existen dos tipos de funciones
+
 // Declarativas
+
 function miFuncion () {
+
     return 3;
+
 }
 
 miFuncion();
