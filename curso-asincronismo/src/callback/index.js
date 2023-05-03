@@ -86,4 +86,15 @@ Crear una función que reciba un string y una función de callback. La función 
 llamar a la función de callback con el string en mayúsculas.*/
 
 
+//practicando callbacks
+
+function sumar (num1,num2,callback){
+    const resultado = num1 + num2;
+    callback(resultado)
+}
+
+sumar(2,4,)
+
+
+
 

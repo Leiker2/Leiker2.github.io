@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+import fetch from 'node-fetch'; //solo cuando arrancamos desde npm, desde el navegador no es necesario
 const API = 'https://api.escuelajs.co/api/v1';
 
 function fetchData(urlApi){
