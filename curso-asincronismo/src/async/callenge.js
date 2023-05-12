@@ -23,3 +23,24 @@ const anotherFunction = async (urlApi) => {
 
 anotherFunction(API);
 
+//practice
+
+async function fecthDAta (urlApi){
+    const response = await fetch(urlApi);
+    const data = await response.json();
+    return data
+}
+
+const getData = async function* (urlApi){
+    try{
+        const products = fecthDAta(`${urlApi}/products`)
+        yield console.log(products[5]);
+    }
+    catch{
+        throw new Error('error!');
+    }
+}
+
+const g = getData('https://api.escuelajs.co/api/v1');
+
+g.next();
