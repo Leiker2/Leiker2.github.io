@@ -1,0 +1,46 @@
+.task {
+    width: 500px;
+    display: flex;
+    gap: 8px;
+    background-color: #222222;
+    margin: 8px 0px;
+    border-radius: 12px;
+    color: white;
+}
+
+.task span {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.task p{
+    width: 80%;
+}
+
+.task :nth-child(3){
+    position: relative;
+}
+.Icon-check{
+    cursor: pointer;
+}
+
+.equis{
+    position: absolute;
+    
+    color: #fb3c3c;
+    cursor: pointer;
+}
+.equis:hover{
+    color: #a1a1a1;
+    transition-duration: 300ms;
+}
+
+.TodoItem-p--complete{
+    text-decoration: line-through;
+}
+
+.Icon-check--active{
+    color: #43d645;
+}
