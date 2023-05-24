@@ -1,5 +1,5 @@
-import { GoCheck } from "react-icons/go";
-import { GoX } from "react-icons/go";
+import { IoCheckbox } from "react-icons/io5";
+import { IoCloseCircleOutline } from "react-icons/io5";
 import './css/TodoItem.css';
 
 function TodoItem(task){
@@ -7,7 +7,7 @@ function TodoItem(task){
         <>
         <li className="task">
             <span>
-            <GoCheck 
+            <IoCheckbox 
                 style={{fontSize: "24px"}}
                 className={`Icon Icon-check ${task.completed && "Icon-check--active"}`}
                 onClick={ task.onComplete }
@@ -16,7 +16,7 @@ function TodoItem(task){
             
             <p className={`TodoItem-p ${task.completed && "TodoItem-p--complete"}`}>{ task.text }</p>
             <span>
-            <GoX 
+            <IoCloseCircleOutline 
                 style={{fontSize: "24px"}}
                 className={`Icon Icon-delete equis`}
                 onClick={ task.onDelete }

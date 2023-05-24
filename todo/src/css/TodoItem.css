@@ -28,12 +28,11 @@
 
 .equis{
     position: absolute;
-    
-    color: #fb3c3c;
+    color: #a1a1a1;
     cursor: pointer;
 }
 .equis:hover{
-    color: #a1a1a1;
+    color: #fb3c3c;
     transition-duration: 300ms;
 }
 
