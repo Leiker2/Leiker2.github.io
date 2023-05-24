@@ -9,18 +9,39 @@ import { TodoAddTaskButton } from './TodoAddTaskButton';
 
 import './index.css';
 
-const defaultTodos = [
-  { text: 'Cortar cebolla', completed: true },
-  { text: 'Tomar agua', completed: false },
-  { text: 'Tomar el curso de React', complete: false },
-  { text: 'Hacer compras', completed: true },
-  { text: 'Lavar la losa', completed: false },
-  { text: 'Tender la cama', completed: true }
-];
+// const defaultTodos = [
+//   { text: 'Cortar cebolla', completed: true },
+//   { text: 'Tomar juego de lechosa', completed: false },
+//   { text: 'Tomar el curso de React', complete: false },
+//   { text: 'Hacer compras', completed: true },
+//   { text: 'Lavar la losa', completed: false },
+//   { text: 'Tender la cama', completed: true }
+// ];
+
+// localStorage.setItem('TODOS_V1', JSON.stringify(defaultTodos));
+
+function useLocalStorage(itemName, initialValue){
+  const localStorageItem = localStorage.getItem(itemName)
+  let parsedItem;
+  
+  if (!localStorageItem){
+    localStorage.setItem(itemName, JSON.stringify(initialValue));
+    parsedItem = initialValue;
+  } else {
+    parsedItem = JSON.parse(localStorageItem);
+  }
+
+  const [item, setItem] = React.useState(parsedItem);
+
+  const saveItem = (newItem) => {
+    localStorage.setItem(itemName, JSON.stringify(newItem))
+    setItem(newItem);
+  };
+  return [item, saveItem]
+}
 
 function App() {
-
-  const [todos,setTodos] = React.useState(defaultTodos);
+  const [todos, saveTodos] = useLocalStorage('TODOS_V1', []);
   const [searchValue, setSearchValue] = React.useState('');
 
   const completedTodos = todos.filter(
@@ -35,8 +56,7 @@ function App() {
 
       return todoText.includes(searchText);
     }
-  )
-
+  ) 
   const completeTodo = (text) => {
     const newTodos = [...todos];
     const todoIndex = newTodos.findIndex(
@@ -45,18 +65,17 @@ function App() {
     newTodos[todoIndex].completed === true
       ? newTodos[todoIndex].completed = false
       : newTodos[todoIndex].completed = true;
-    setTodos(newTodos);
+    saveTodos(newTodos);
   }
-
   const deleteTodo = (text) => {
     const newTodos = [...todos];
     const todoIndex = newTodos.findIndex(
       (todo) => todo.text === text
     );
     newTodos.splice(todoIndex,1)
-    setTodos(newTodos);
+    saveTodos(newTodos);
   };
- 
+
   return (
     <>
     <TodoLogo/>
@@ -86,7 +105,7 @@ function App() {
       </TodoList>
     </TodoContainer>
     
-    <TodoAddTaskButton/>
+    <TodoAddTaskButton />
     </>
   );
 }

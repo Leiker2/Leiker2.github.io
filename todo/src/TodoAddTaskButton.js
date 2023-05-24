@@ -1,16 +1,16 @@
 import './css/TodoAddTaskButton.css';
 import { IoAddCircle } from "react-icons/io5";
-import { IoArrowForward } from "react-icons/io5";
+import { IoChevronForwardOutline } from "react-icons/io5";
 
-function TodoAddTaskButton () {
+function TodoAddTaskButton ({todos}) {
     return (
         <footer>
             <div>
-                <span><IoArrowForward 
-                    className={`
-                        moving-element 
-                    `}
-                    style={{color: "#ffde59", fontSize: "34px"}} />
+                <span>
+                    <IoChevronForwardOutline
+                        className="moving-element"
+                        style={{ color: "#ffde59", fontSize: "34px" }}
+                    />
                 </span>
                 <button 
                     onClick={
@@ -21,7 +21,10 @@ function TodoAddTaskButton () {
                         }
                     } 
                     name="button">
-                        <IoAddCircle className='Button-add' style={{fontSize: "48px"}} />
+                        <IoAddCircle 
+                            className='Button-add' 
+                            style={{fontSize: "48px"}} 
+                        />
                 </button>
             </div>
         </footer>
